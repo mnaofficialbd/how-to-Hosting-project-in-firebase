@@ -1,29 +1,8 @@
-## Steps of solving ReactDOM.render warning.
-## step: 1 
-### Go to project (index.js) file.
-## step: 2 (Replace) 
-- import ReactDOM from 'react-dom'; 
-### ==> import {createRoot} from "react-dom/client"
-
-## step: 3 (Replace)
-- ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-# ==>
-- const container=document.getElementById('root');
-- const root=createRoot(container);
-- root.render(<React.StrictMode>
--  App 
-- </React.StrictMode>);
-
 
 ## Simple firebase authentication
-## How to use Firebase in a project
+# How to use Firebase in a project
 
- #### Steps to use firebase:
+ ### Steps to use firebase:
  * 1. Create a project on console.firebase.google.com.
  * 2. npm install firebase on project
  * 3. Register web app in firebase setting.
