@@ -1,17 +1,16 @@
+# How to use Auth in Firebase for a project
 
-## Simple firebase authentication
-# How to use Firebase in a project
-
- ### Steps to use firebase:
- * 1. Create a project on console.firebase.google.com.
- * 2. npm install firebase on project
- * 3. Register web app in firebase setting.
- * 4. copy firebase init with config from firebase project settings into a file firebase.init.js
- * 5. export default app from firebase.init.js file.
- * 6. import {getAuth} from "firebase/auth" and create const auth = getAuth(app) in App.js
- * 7. import app  firebase init.js into your app.js.
- * 8. Turn on google authentication (firebase >authentication > enable google sign-in)
- * 9. create google provider.
- * 10. use signInWithPopup and pass auth and provider.
- * 11. handle .then(if success) and catch(if error).
+ ### Firebase Auth use Steps:
+ * 1. Create a new firebase project in console.firebase.google.com
+ * 2. npm install firebase
+ * 3. create firebase.init.js and input getAuth to export auth
+ * 4. Firebase settings > Authentication > enable Email and password auth
+ * 5. Create Login, SignUp component, setup route. 
+ * 6. attach from field handle and form submit handle
+ * 7. npm install --save react-firebase-hooks
+ * 8. useCreateUserWithEmailAndPassword from react-firebase-hooks
+ * 9. if user user is created redirect to the expected page.
+ * 10. useSignInWithEmailAndPassword for Login
+ * 11. Create RequireAuth component ==> check user exists also tract user location.
+ * 12. In route wrap protected component by using Require Auth component.
 
